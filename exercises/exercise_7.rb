@@ -10,3 +10,6 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+inputStore = gets.chomp
+@userStore = Store.create(name: inputStore)
+puts @userStore.errors.full_messages.join("\n")
